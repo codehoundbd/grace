@@ -62,28 +62,34 @@ padding:2px;
       }
 .img_left1 {
 padding: 0px;
-margin: 15px 20px 99px 0px;
-float: left;
+margin: 0px 0px 16px 100px;
+/*float: left;*/
 display: block;
 }
 #rotate{
 width:46px;
 height: 46px;
 position: relative;
--webkit-transition:width 2s, height 2s, -webkit-transform 2s;
--moz-transition:width 2s, height 2s, -moz-transform 2s;
--o-transition:width 2s, height 2s, -o-transform 2s;
-transition:width 2s, height 2s, transform 2s;
+-webkit-transition: -webkit-transform 2s;
+-moz-transition: -moz-transform 2s;
+-o-transition: -o-transform 2s;
+transition: transform 2s;
 
 
 
 }
 #rotate:hover{
 
-width: 70px;
-height: 70px;
+/*width: 70px;
+height: 70px;*/
 	transform:rotate(180deg);
 -moz-transform:rotate(180deg); /* Firefox 4 */
 -webkit-transform:rotate(180deg); /* Safari and Chrome */
 -o-transform:rotate(180deg); /* Opera */
+}
+.top_A{
+padding-left:5%;
+
+
+
 }
