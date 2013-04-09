@@ -11,7 +11,6 @@ min-height:100%;
 }
 
 body {
-font-family:Arial, Helvetica, sans-serif;
 background:url(../images/bg.jpg) no-repeat top center fixed;
 font-size:12px;
 color:#aaa;
@@ -32,7 +31,6 @@ margin:-150px 0 0 -300px;
 }
 
 h1 {
-font-family:'Merienda One', sans-serif;
 font-weight:normal;
 color:#bbb;
 font-size:88px;
@@ -61,13 +59,12 @@ margin-bottom:20px;
 }
 
 p {
-text-align:center;
+text-align:left;
 }
 
 .title {
 clear:both;
 margin-top:0;
-font-family:'Merienda One', sans-serif;
 font-weight:normal;
 color:#bbb;
 font-size:44px;
