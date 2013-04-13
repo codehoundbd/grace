@@ -1,4 +1,4 @@
-/* 
+/*
  * Scroller
  * author: Marcin Dziewulski
  * web: http://www.jscraft.net
@@ -14,21 +14,21 @@
 			container: {
 				name: 'inside',
 				easing: 'easeOutBack',
-				duration: 800
+				duration: 1500
 			},
 			options: {
 				margin: -20,
 				zoom: 1.5,
-				easing: ['easeOutBack', 'easeOutBounce'],
+				easing: ['easeOutBounce', 'easeOutBounce'],
 				duration: [300, 500]
 			},
 			onclick: function(a, img){},
 			onmouseover: function(a, img){},
 			onmouseout: function(a, img){}
 		} // default settings
-		
-		var S = $.extend(true, D, options); 
-		
+
+		var S = $.extend(true, D, options);
+
         return this.each(function(){
 			var M = $(this),
 				IN = M.find('.'+S.container.name),
@@ -76,7 +76,7 @@
 						center: function(){
 							var css = {}, l = E.length;
 							if (DIR == 'horizontal'){
-								css.left = -(l*MW)/l*2-MW/2;
+								//css.left = -(l*MW)/l*2-MW/2;
 							} else if (DIR == 'vertical') {
 								css.top = -(l*MH)/l*2;
 							}
@@ -173,7 +173,7 @@
 								if (!t.hasClass('active')) {
 									P._helper.animate(t, h);
 								}
-							});	
+							});
 						},
 						click: function(){
 							E.click(function(){
@@ -188,10 +188,10 @@
 								if (!t.hasClass('active')){
 									var zoomin = P._helper.zoomin(),
 										zoomout = P._helper.zoomout();
-									
+
 									P._helper.animate(E, zoomout);
 									P._helper.animate(t, zoomin);
-									
+
 									E.removeClass('active');
 									t.addClass('active');
 								}

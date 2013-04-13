@@ -1,9 +1,9 @@
 .demo1 {
-float:left;
+//float:left;
 clear:both;
 width:1178px;
 height:350px;
-overflow:hidden;
+//overflow:hidden;
 position:relative;
 }
 

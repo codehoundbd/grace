@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+  <!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
+  <!--[if IE 8]><html class="no-js lt-ie9"><![endif]-->
+  <!--[if gt IE 8]><!--><html class="no-js"><!--<![endif]-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html lang="en">
   <head>
@@ -9,50 +13,151 @@
     <meta name="author" content="Mursalin Kabir">
 
 
-    <!-- Le styles taste-->
+    <!-- Le styles -->
    <link rel="stylesheet" href="style.css" />
-   
+
+
+  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Economica' rel='stylesheet' type='text/css'>
+
    <link href="css/default.css" rel="stylesheet" type="text/css" />
    <link href="css/demo1.css" rel="stylesheet" type="text/css" />
-    
-    
+   
+
+
     <link rel="stylesheet" type="text/css" href="css/demo.css" />
     <link rel="stylesheet" type="text/css" href="css/demo2.css" />
     <link rel="stylesheet" href="css/screen.css" type="text/css" media="screen" />
   <link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
-    
-    
-    
+  <link rel="stylesheet" href="css/oe_menu.css" type="text/css"/>
 
-    
+  <link href="css/theme.css" media="screen" rel="stylesheet" type="text/css" />
+
+
+
     <link rel="stylesheet" type="text/css" href="css/style2.css" />
     <link rel="stylesheet" type="text/css" href="css/style3.css" />
+
+
+    <script>document.cookie='resolution='+Math.max(screen.width,screen.height)+("devicePixelRatio" in window ? ","+devicePixelRatio : ",1")+'; path=/';</script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="js/jquery.easing.js" type="text/javascript"></script>
     <script src="js/scroller.js" type="text/javascript"></script>
     <script src="js/init.js" type="text/javascript"></script>
-    
+    <script type="text/javascript" language="javascript" src="js/jquery.carouFredSel-6.2.0-packed.js"></script>
+
     <script type="text/javascript" src="js/modernizr.custom.28468.js"></script>
     
+    </head>
+    <script type="text/javascript" src="js/theme.js"></script>
+   
+   
+
+    <script src="js/cufon-yui.js" type="text/javascript"></script>
+    <script src="js/Aller.font.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      Cufon.replace('ul.oe_menu div a',{hover: true});
+      Cufon.replace('h1,h2,.oe_heading');
+    </script>
+
     <link href="css/bootstrap.css" rel="stylesheet">
-    
+
+
+    <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Fondamento' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Kelly+Slab' rel='stylesheet' type='text/css' />
     <link href='http://fonts.googleapis.com/css?family=Economica:700,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+
+
     <noscript>
       <link rel="stylesheet" type="text/css" href="css/nojs.css" />
       <link rel="stylesheet" type="text/css" href="css/noscript.css" />
     </noscript>
+    <!--fred Carousel style-->
+    <style type="text/css" media="all">
+      
+      #intro {
+        width: 580px;
+        margin: 0 auto;
+      }
+      .wrapper {
+        background-color: white;
+        width: 480px;
+        margin: 40px auto;
+        padding: 50px;
+        box-shadow: 0 0 5px #999;
+      }
+      
+      .list_carousel ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: block;
+      }
+      .list_carousel li {
+        font-size: 40px;
+        color: #999;
+        text-align: center;
+        background-color: #eee;
+        border: 2px solid #999;
+        width: 150px;
+        height: 120px;
+        padding: 0;
+        margin: 6px;
+        display: block;
+        float: left;
+      }
+      .list_carousel.responsive {
+        width: auto;
+        margin-left: 0;
+      }
+      .clearfix {
+        float: none;
+        clear: both;
+      }
+      .prev {
+        float: left;
+        margin-left: 10px;
+      }
+      .next {
+        float: right;
+        margin-right: 10px;
+      }
+      .pager {
+        float: left;
+        width: 300px;
+        text-align: center;
+      }
+      .pager a {
+        margin: 0 5px;
+        text-decoration: none;
+      }
+      .pager a.selected {
+        text-decoration: underline;
+      }
+      .timer {
+        background-color: #33B5E5;
+        height: 6px;
+        width: 0px;
+      }
+    </style> 
     <style type="text/css">
       body {
         padding-top: 20px;
         padding-bottom: 60px;
-        background-color:#ffffff;
+        background-image:url(img/pattern5.png);background-repeat:repeat;background-color:rgb(223, 218, 218);
       }
 
       /* Custom container */
       .container {
-        margin: 0 auto;
-        max-width: 1200px;
+       margin-left: auto;
+    margin-right: auto;
+    width: 1080px;
+  background:#fff;
       }
       .container > hr {
         margin: 60px 0;
@@ -134,16 +239,33 @@
         background-color:pearlwhite;
         box-shadow: 10px 10px 5px #888888;
          }
-        
+
       .footer1{
       height: 50px;
       background: #2c2c2c url(../img/bg_pattern3.png) repeat;
 
 
       }
-   
-    
+
+
     </style>
+    <script type="text/javascript" language="javascript">
+      $(function() {
+
+       
+
+        //  Scrolled by user interaction
+        $('#foo1').carouFredSel({
+          auto: {
+            pauseOnHover: 'resume',
+            
+          }
+        }, {
+          transition: true
+        });
+        });
+         
+    </script>
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -159,49 +281,192 @@
                                    <link rel="shortcut icon" href="../assets/ico/favicon.png">
 
 
-    
+
   </head>
 
   <body>
+  
+  
 
-    <div class="container">
+    <div class="container"><header class="">
+        <div class="header_wrapper container">
+            <a href="index.html" class="logo"><img src="img/logo.png" alt="" width="222" height="43" class="logo_def"></a>
+            <div class="slogan"><span>Lorem ipsum dolor sit amet egestas call us toll free +1 800 1313 666</span><hr></div>
+            <nav>
+              
+              <div class="oe_wrapper">
+                <div id="oe_overlay" class="oe_overlay"></div>
+                <ul id="oe_menu" class="oe_menu">
+                  <li><a href="">Collections</a>
+                    <div>
+                      <ul>
+                        <li class="oe_heading">Summer 2011</li>
+                        <li><a href="#">Milano</a></li>
+                        <li><a href="#">Paris</a></li>
+                        <li><a href="#">Special Events</a></li>
+                        <li><a href="#">Runway Show</a></li>
+                        <li><a href="#">Overview</a></li>
+                      </ul>
+                      <ul>
+                        <li class="oe_heading">Winter 2010</li>
+                        <li><a href="#">Milano</a></li>
+                        <li><a href="#">New York</a></li>
+                        <li><a href="#">Behind the scenes</a></li>
+                        <li><a href="#">Interview</a></li>
+                        <li><a href="#">Photos</a></li>
+                        <li><a href="#">Download</a></li>
+                      </ul>
+                      <ul>
+                        <li class="oe_heading">Categories</li>
+                        <li><a href="#">Casual</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">Underwear</a></li>
+                        <li><a href="#">Nature Pure</a></li>
+                        <li><a href="#">Swimwear</a></li>
+                        <li><a href="#">Evening</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><a href="">Projects</a>
+                    <div style="left:-111px;"><!-- -112px -->
+                      <ul>
+                        <li class="oe_heading">Fashion Shows</li>
+                        <li><a href="#">Milano</a></li>
+                        <li><a href="#">Paris</a></li>
+                        <li><a href="#">Berlin</a></li>
+                        <li><a href="#">New York</a></li>
+                        <li><a href="#">London</a></li>
+                      </ul>
+                      <ul>
+                        <li class="oe_heading">Events</li>
+                        <li><a href="#">Fashion Party 2011</a></li>
+                        <li><a href="#">Evening specials</a></li>
+                        <li><a href="#">Fashion Day Milano</a></li>
+                        <li><a href="#">Model Workshops</a></li>
+                      </ul>
+                      <ul>
+                        <li class="oe_heading">Media</li>
+                        <li><a href="#">Wallpapers</a></li>
+                        <li><a href="#">Downloads</a></li>
+                        <li><a href="#">Images</a></li>
+                        <li><a href="#">Contest 2011</a></li>
+                        <li><a href="#">Fashion Mania</a></li>
+                        <li><a href="#">Green Earth Day</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><a href="">Fragrances</a>
+                    <div style="left:-223px;">
+                      <ul class="oe_full">
+                        <li class="oe_heading">Fashion Fragrances</li>
+                        <li><a href="#">Deálure</a></li>
+                        <li><a href="#">Violet Woman</a></li>
+                        <li><a href="#">Deep Blue for Men</a></li>
+                        <li><a href="#">New York, New York</a></li>
+                        <li><a href="#">Illusion</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><a href="">Events</a>
+                    <div style="left:-335px;">
+                      <ul>
+                        <li class="oe_heading">Shows 2010</li>
+                        <li><a href="#">Milano</a></li>
+                        <li><a href="#">Paris</a></li>
+                        <li><a href="#">Berlin</a></li>
+                        <li><a href="#">New York</a></li>
+                        <li><a href="#">London</a></li>
+                      </ul>
+                      <ul>
+                        <li class="oe_heading">Shows 2011</li>
+                        <li><a href="#">Milano</a></li>
+                        <li><a href="#">Paris</a></li>
+                        <li><a href="#">Berlin</a></li>
+                        <li><a href="#">New York</a></li>
+                        <li><a href="#">London</a></li>
+                      </ul>
+                      <ul>
+                        <li class="oe_heading">Special Events</li>
+                        <li><a href="#">Fashion Party 2011</a></li>
+                        <li><a href="#">Fashion Countdown Party 2010</a></li>
+                        <li><a href="#">Fashion Day Milano</a></li>
+                        <li><a href="#">Model Workshops</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><a href="">Stores</a>
+                    <div style="left:-447px;">
+                      <ul>
+                        <li class="oe_heading">Europe</li>
+                        <li><a href="#">Milano</a></li>
+                        <li><a href="#">Paris</a></li>
+                        <li><a href="#">Berlin</a></li>
+                        <li><a href="#">London</a></li>
+                      </ul>
+                      <ul>
+                        <li class="oe_heading">Asia</li>
+                        <li><a href="#">Hong Kong</a></li>
+                        <li><a href="#">Tokio</a></li>
+                        <li><a href="#">New Delhi</a></li>
+                        <li><a href="#">Beijing</a></li>
+                      </ul>
+                      <ul>
+                        <li class="oe_heading">United States</li>
+                        <li><a href="#">New York</a></li>
+                        <li><a href="#">Los Angeles</a></li>
+                        <li><a href="#">Seattle</a></li>
+                        <li><a href="#">Miami</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
 
-      <div class="masthead">
-        <h3 class="muted">Project name</h3>
-        <div class="navbar">
-          <div class="navbar-inner">
-            <div class="container">
-              <ul class="nav">
-                <li class="active"><a href="#">Home<br>
-                 <span style="font-size:9px;text-align:left;">Loren ipsum vivams vitae sodales</span>
-                <li><a href="#">Projects<br>
-                 
-                <span style="font-size:9px;text-align:left;"> Vivamus antiqua mac ridiculus metus</span>
-                </a>
-                
 
-                </li>
-                <li><a href="#">Services<br>
 
-                <span style="font-size:9px;text-align:left;">Egestas cras maurist pellentesque</span>
-                </a></li>
-                <li><a href="#">Downloads<br>
-                <span style="font-size:9px;text-align:left;"> Vivamus antiqua mac ridiculus metus</span></a></li>
-                <li><a href="#">About
-                <br>
-                 <span style="font-size:9px;text-align:left;">Loren ipsum vivams vitae sodales</span></a></li>
-                <li><a href="#">Contact<br>
+            </nav>
+           
 
-                <span style="font-size:9px;text-align:left;">Egestas cras maurist pellentesque</span></a></li>
-              </ul>
-            </div>
-          </div>
-        </div><!-- /.navbar -->
-      </div>
-</div>
+
+
+            <script type="text/javascript">
+            $(function() {
+        var $oe_menu    = $('#oe_menu');
+        var $oe_menu_items  = $oe_menu.children('li');
+        var $oe_overlay   = $('#oe_overlay');
+
+                $oe_menu_items.bind('mouseenter',function(){
+          var $this = $(this);
+          $this.addClass('slided selected');
+          $this.children('div').css('z-index','9999').stop(true,true).slideDown(200,function(){
+            $oe_menu_items.not('.slided').children('div').hide();
+            $this.removeClass('slided');
+          });
+        }).bind('mouseleave',function(){
+          var $this = $(this);
+          $this.removeClass('selected').children('div').css('z-index','1');
+        });
+
+        $oe_menu.bind('mouseenter',function(){
+          var $this = $(this);
+          $oe_overlay.stop(true,true).fadeTo(200, 0.6);
+          $this.addClass('hovered');
+        }).bind('mouseleave',function(){
+          var $this = $(this);
+          $this.removeClass('hovered');
+          $oe_overlay.stop(true,true).fadeTo(200, 0);
+          $oe_menu_items.children('div').hide();
+        })
+            });
+        </script>
+
+        <a href="javascript:void(0)" class="menu_toggler"></a></div><!-- .header_wrapper -->
+      <div class="clear"></div>
+  </header></div>
+ </div>
       <!-- Jumbotron -->
       <!-- SLIDEER-->
-     <div >     
+     <div >
       <div id="da-slider" class="da-slider">
         <div class="da-slide">
           <h2>Easy management</h2>
@@ -209,7 +474,7 @@
           <a href="#" class="da-link">Read more</a>
           <div class="da-img"><img src="images/2.png" alt="image01" /></div>
         </div>
-        
+
         <div class="da-slide">
           <h2>Revolution</h2>
           <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
@@ -234,14 +499,14 @@
         </nav>
       </div>
         </div>
-    
-   
+
+
     <script type="text/javascript" src="js/jquery.cslider.js"></script>
     <script type="text/javascript">
      $(function() {
-      
+
         $('#da-slider').cslider();
-        
+
       });
     </script>
     <!-- END OF SLIDER -->
@@ -251,60 +516,48 @@
       <!-- Why choose grace section -->
 
       <div class="container">
-        <div class="shad2">
-          <table>
-            <tr>
-              <td>
-               <h1><span style="color: #888888; border-right-style: groove;">Why Choose Grace??     </span></h1>
-              </td>
-              <td>
-                <div style="margin-left: 10%;">
-                  <h3 style="text-align: center;"><span style="color: #888888;">Its Amazingly Easy to Customize!!</span>
-                  <img src="img/customize.png" alt='custom' align="left">
-
-                  </h3>
-                  <h4><span style="color: #888888;float:left;"> fermentum massa justo sit amet </span></h4>
-
-
-
-
-
-
-
-                </div>
-
-
-              </td>
-
-
-            </tr>
-
-
-
-
-             </table>
-
-
-
+        
+        <div class="row">
+          
+        <div class="span4" >
+          <div >
+          <img src="images/simple1.png" alt="icon" id="rotate" class="img_left1" />
+        </div>
+          <h3 >Elegant Design</h3>
+          <p >If your computer or network is protectn ed by a firewall proxy make sure design and company that Firefox is permitted to access </p>
+        </div>
+        <div class="span4">
+          <img src="images/responsive1.png" alt="icon" id="rotate" class="img_left1"/>
+          <h3>Fully Responsive</h3>
+          <p>If your computer or network is protectn ed by a firewall proxy make sure design and company that Firefox is permitted to access </p>
+        </div>
+         <div class="span4">
+          <img src="images/multipurpose1.png" alt="icon" id="rotate" class="img_left1"/>
+          <h3>Mulipurpose Theme</h3>
+          <p>If your computer or network is protectn ed by a firewall proxy make sure design and company that Firefox is permitted to access </p>
+        </div>
 
          </div>
-         </div> 
+         
+         </div>
          <!--why chhose end-->
         <hr>
 
         <!--Circle Hover-->
+        <div class="container">
         <div style="margin-left: 10%;" class="container">
           <div style="width:350px;float:left;padding:10px;">
             <p class="message">Your browser does not support the border-radius property!</p>
         <div class="section">
           <div class="normal-trigger-area">
-            <a href="#" id="circle1" class="ec-circle">
-              <h3>Hovered</h3>
+            <a href="#" id="circle1" class="ec-circle" style="background: #dda994 url(images/glass.jpg) no-repeat center center;">
+              <h3>Google Glass</h3>
+              <p>Seeing is believing</p>
             </a>
           </div>
 
 
-          
+
         </div>
         <div class="span4">
           <h2>Heading</h2>
@@ -312,14 +565,15 @@
           <p><a class="btn" href="#">View details &raquo;</a></p>
         </div>
       </div>
-    
+
 
         <div style="width: 350px; float: left;padding:10px;">
           <p class="message">Your browser does not support the border-radius property!</p>
         <div class="section">
           <div class="normal-trigger-area">
-            <a href="#" id="circle2" class="ec-circle">
-              <h3>Hovered</h3>
+            <a href="#" id="circle2" class="ec-circle" style="background: #dda994 url(images/iphone.jpg) no-repeat center center;">
+              <h3>iPhone 5</h3>
+               <p>Loving it is easy<br>Thats why so many people love it</p>
             </a>
           </div>
        </div>
@@ -333,8 +587,9 @@
           <p class="message">Your browser does not support the border-radius property!</p>
         <div class="section">
           <div class="normal-trigger-area">
-            <a href="#" id="circle3" class="ec-circle">
-              <h3>Hovered</h3>
+            <a href="#" id="circle3" class="ec-circle" style="background: #dda994 url(images/s4.jpg) no-repeat center center;">
+              <h3>Galaxy s4</h3>
+              <p>The next big thing is here</p>
             </a>
           </div>
        </div>
@@ -360,75 +615,76 @@
 
 
         </div>
-    
+
+
     <script type="text/javascript" src="js/jquery.circlemouse.js"></script>
         <script type="text/javascript">
             $(function() {
-        
+
         $('#circle1').circlemouse({
           onMouseEnter  : function( el ) {
-          
+
             el.addClass('ec-circle-hover');
-          
+
           },
           onMouseLeave  : function( el ) {
-            
+
             el.removeClass('ec-circle-hover');
-            
+
           },
           onClick     : function( el ) {
-            
+
             alert('clicked');
-            
+
                    }
                     });
-        
+
                       });
         </script>
         <script type="text/javascript">
             $(function() {
-        
+
         $('#circle2').circlemouse({
           onMouseEnter  : function( el ) {
-          
+
             el.addClass('ec-circle-hover');
-          
+
           },
           onMouseLeave  : function( el ) {
-            
+
             el.removeClass('ec-circle-hover');
-            
+
           },
           onClick     : function( el ) {
-            
+
             alert('clicked');
-            
+
                    }
                     });
-        
+
                       });
         </script>
         <script type="text/javascript">
             $(function() {
-        
+
         $('#circle3').circlemouse({
           onMouseEnter  : function( el ) {
-          
+
             el.addClass('ec-circle-hover');
-          
+
           },
           onMouseLeave  : function( el ) {
-            
+
             el.removeClass('ec-circle-hover');
-            
+
           },
           onClick     : function( el ) {
-            
+
             alert('clicked');
-            
+
                    }
                     });
-        
+
                       });
         </script>
 
@@ -497,82 +753,139 @@
     </div>
       <!-- Recent Project End -->
 
-      <div class="container">
-      <div class="scroller demo1">
-      <div class="inside">
-        <a href="#"><img src="assets/img1.jpg" alt="" /></a>
-        <a href="#"><img src="assets/img2.jpg" alt="" /></a>
-        <a href="#"><img src="assets/img3.jpg" alt="" /></a>
-        <a href="#"><img src="assets/img4.jpg" alt="" /></a>
-        <a href="#"><img src="assets/img5.jpg" alt="" /></a>
-        <a href="#"><img src="assets/img6.jpg" alt="" /></a>
-        <a href="#"><img src="assets/img7.jpg" alt="" /></a>
-        <a href="#"><img src="assets/img8.jpg" alt="" /></a>
-        <a href="#"><img src="assets/img9.jpg" alt="" /></a>
-        <a href="#"><img src="assets/img10.jpg" alt="" /></a>
-        <a href="#"><img src="assets/img11.jpg" alt="" /></a>
-        <a href="#"><img src="assets/img12.jpg" alt="" /></a>
-        <a href="#"><img src="assets/img13.jpg" alt="" /></a>
-        <a href="#"><img src="assets/img14.jpg" alt="" /></a>
-        <a href="#"><img src="assets/img15.jpg" alt="" /></a>
-      </div>
-    </div>
-    </div>
+      <hr>
+      <h1 style="text-align:center">Our Clients</h1>
+      <hr>
 
      <!-- /container -->
-     <div class="testing">
-     <div class="innerbottom">
-     <div class="About US">
-      <h2 style="text-align:center;">About Us</h2>
-    <p style="text-align:left;">
-Etiam iaculis imperdiets nes, ac viverra lluset euismo aliquam pellentesquet nisit tortor.
-Elementum vitaenut posuere eget, ornarear quis purustin lost rhoncu sagittis mattis. Vestibulum los quam, nec stique cunsapien vitaert vivamus aliquam ut.
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas ictumero pharetra convallists, augue risus gravida leo, sed ultricies dolor
-
-    </p>   
-    
-
-
-     </div>
-     </div>
-     <div class="innerbottom">
-     <div class="About US">
-      <h2 style="text-align:center;">About Us</h2>
-    <p style="text-align:left;">
-Etiam iaculis imperdiets nes, ac viverra lluset euismo aliquam pellentesquet nisit tortor.
-Elementum vitaenut posuere eget, ornarear quis purustin lost rhoncu sagittis mattis. Vestibulum los quam, nec stique cunsapien vitaert vivamus aliquam ut.
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas ictumero pharetra convallists, augue risus gravida leo, sed ultricies dolor
-
-    </p>   
-    
-
-
-     </div>
-     </div>
-     <div class="innerbottom">
-     <div class="About US">
-      <h2 style="text-align:center;">About Us</h2>
-    <p style="text-align:left;">
-Etiam iaculis imperdiets nes, ac viverra lluset euismo aliquam pellentesquet nisit tortor.
-Elementum vitaenut posuere eget, ornarear quis purustin lost rhoncu sagittis mattis. Vestibulum los quam, nec stique cunsapien vitaert vivamus aliquam ut.
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas ictumero pharetra convallists, augue risus gravida leo, sed ultricies dolor
-
-    </p>   
-    
-
-
-     </div>
-     </div>
-    </div>
+     <div class="container">
       
-      <div class="footer1">
-        <p style="color:white;">Company 2013</p>
+        
+        <!--  Fred Carousel -->
+        <div class="list_carousel">
+        <ul id="foo1">
+          <li><a href="#"><img src="images/clients/small/1.jpg" alt="image01" /></a></li>
+          <li><a href="#"><img src="images/clients/small/2.jpg" alt="image02" /></a></li>
+          <li><a href="#"><img src="images/clients/small/3.jpg" alt="image03" /></a></li>
+          <li><a href="#"><img src="images/clients/small/4.jpg" alt="image04" /></a></li>
+          <li><a href="#"><img src="images/clients/small/5.jpg" alt="image05" /></a></li>
+          <li><a href="#"><img src="images/clients/small/6.jpg" alt="image06" /></a></li>
+          <li><a href="#"><img src="images/clients/small/7.jpg" alt="image07" /></a></li>
+          <li><a href="#"><img src="images/clients/small/8.jpg" alt="image08" /></a></li>
+          <li><a href="#"><img src="images/clients/small/9.jpg" alt="image09" /></a></li>
+          <li><a href="#"><img src="images/clients/small/10.jpg" alt="image10" /></a></li>
+          <li><a href="#"><img src="images/clients/small/11.jpg" alt="image11" /></a></li>
+          <li><a href="#"><img src="images/clients/small/12.jpg" alt="image12" /></a></li>
+          <li><a href="#"><img src="images/clients/small/13.jpg" alt="image13" /></a></li>
+          <li><a href="#"><img src="images/clients/small/14.jpg" alt="image14" /></a></li>
+          <li><a href="#"><img src="images/clients/small/15.jpg" alt="image15" /></a></li>
+          <li><a href="#"><img src="images/clients/small/16.jpg" alt="image16" /></a></li>
+          <li><a href="#"><img src="images/clients/small/17.jpg" alt="image17" /></a></li>
+          <li><a href="#"><img src="images/clients/small/18.jpg" alt="image18" /></a></li>
+          <li><a href="#"><img src="images/clients/small/19.jpg" alt="image19" /></a></li>
+          <li><a href="#"><img src="images/clients/small/20.jpg" alt="image20" /></a></li>
+        </ul>
+        <div class="clearfix"></div>
+        <div id="timer1" class="timer"></div>
+      </div>
+      <br />
+              
+
+    
+        
       </div>
       
-    
+      
+     
 
 
-    
+<footer>
+        <div class="container">
+          <div class="row">
+            <!-- <div class="footer-ribon">
+              <span>Get in Touch</span>
+            </div> -->
+            <div class="span3">
+              <h4>Newsletter</h4>
+              <p>Keep up on our always evolving product features and technology. Enter your e-mail and subscribe to our newsletter.</p>
+
+              <div class="alert alert-success hidden" id="newsletterSuccess">
+                <strong>Success!</strong> You've been added to our email list.
+              </div>
+
+              <div class="alert alert-error hidden" id="newsletterError"></div>
+
+              <form class="form-inline" id="newsletterForm" action="php/newsletter-subscribe.php" method="POST" novalidate="novalidate">
+                <div class="control-group">
+                  <div class="input-append">
+                    <div class="fancy_input" style="display:inline;"><input class="span2" placeholder="Email Address" name="email" id="email" type="text"></div>
+                    <button class="btn" type="submit">Go!</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="span3">
+              <h4>Latest Tweet</h4>
+              <div id="tweet" class="twitter"><ul><li><i class="icon-twitter"></i> "Just released the new Porto HTML5 Responsive Template, check out: <a title="http://tinyurl.com/as76lyz" href="http://tinyurl.com/as76lyz">tinyurl.com/as76lyz</a>" <a class="time" href="http://twitter.com/crivosthemes/statuses/306180138817699841/">25 Feb</a></li></ul></div>
+            </div>
+            <div class="span4">
+              <div class="contact-details">
+                <h4>Contact Us</h4>
+                <ul class="contact">
+                  <li><p><i class="icon-map-marker"></i> 1234 Street Name, City Name, United States</p></li>
+                  <li><p><i class="icon-mobile"></i> (123) 456-7890</p></li>
+                  <li><p><i class="icon-envelope"></i> <a href="mailto:mail@example.com">mail@example.com</a></p></li>
+                </ul>
+              </div>
+            </div>
+            <div class="span2">
+              <h4>Follow Us</h4>
+              <div class="social-icons">
+                <ul class="social-icons">
+                  <li class="facebook"><a href="http://www.facebook.com/" target="_blank" data-placement="bottom" rel="tooltip" title="" data-original-title="Facebook">Facebook</a></li>
+                  <li class="twitter"><a href="http://www.twitter.com/" target="_blank" data-placement="bottom" rel="tooltip" title="" data-original-title="Twitter">Twitter</a></li>
+                  <li class="linkedin"><a href="http://www.linkedin.com/" target="_blank" data-placement="bottom" rel="tooltip" title="" data-original-title="Linkedin">Linkedin</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+            <div class="row">
+              <div class="span1">
+                <a href="index.html" class="logo">
+                  <img alt="Porto Website Template" src="img/logo-footer.png">
+                </a>
+              </div>
+              <div class="span7">
+                <p>© Copyright 2013 by Crivos. All Rights Reserved.</p>
+              </div>
+              <div class="span4">
+                <nav id="sub-menu">
+                  <ul>
+                    <li><a href="page-faq.html">FAQ's</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                    <li><a href="contact-us.html">Contact</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+
+
+     </div>
+
+
+
+
+
+
+
 
     <!-- Le javascript
     ================================================== -->
@@ -606,6 +919,8 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac tu
   })();
 
 </script>
+
+
 
 
 
