@@ -32,8 +32,8 @@
 }
 /* The circle */
 .ec-circle{
-    width: 345px;
-    height: 345px;
+    width: 245px;
+    height: 245px;
 	-webkit-border-radius: 210px;
 	-moz-border-radius: 210px;
 	border-radius: 50%;
@@ -93,9 +93,9 @@
 .ec-circle h3{
 	font-family:'Economica', Georgia, serif;
 	color: transparent;
-    font-size: 36px; /*66px*/
+    font-size: 20px; /*66px*/
     text-decoration: none;
-	line-height: 145px;/*420px*/
+	line-height: 75px;/*420px*/
 	margin-top: 50px;
     text-shadow: 0px 0px 100px #fff;
 

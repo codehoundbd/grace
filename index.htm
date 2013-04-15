@@ -29,6 +29,7 @@
     <link rel="stylesheet" type="text/css" href="css/demo2.css" />
     <link rel="stylesheet" href="css/screen.css" type="text/css" media="screen" />
   <link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="css/jquery.bxslider.css" type="text/css" media="screen" />
   <link rel="stylesheet" href="css/oe_menu.css" type="text/css"/>
 
   <link href="css/theme.css" media="screen" rel="stylesheet" type="text/css" />
@@ -50,6 +51,7 @@
     
     </head>
     <script type="text/javascript" src="js/theme.js"></script>
+    <script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
    
    
 
@@ -520,11 +522,12 @@
         <div class="row">
           
         <div class="span4" >
-          <div >
+          <div class="shadow">
           <img src="images/simple1.png" alt="icon" id="rotate" class="img_left1" />
-        </div>
+        
           <h3 >Elegant Design</h3>
           <p >If your computer or network is protectn ed by a firewall proxy make sure design and company that Firefox is permitted to access </p>
+        </div>
         </div>
         <div class="span4">
           <img src="images/responsive1.png" alt="icon" id="rotate" class="img_left1"/>
@@ -640,30 +643,7 @@
                     });
 
                       });
-        </script>
-        <script type="text/javascript">
-            $(function() {
-
-        $('#circle2').circlemouse({
-          onMouseEnter  : function( el ) {
-
-            el.addClass('ec-circle-hover');
-
-          },
-          onMouseLeave  : function( el ) {
-
-            el.removeClass('ec-circle-hover');
-
-          },
-          onClick     : function( el ) {
-
-            alert('clicked');
-
-                   }
-                    });
-
-                      });
-        </script>
+        
         <script type="text/javascript">
             $(function() {
 
@@ -794,7 +774,197 @@
     
         
       </div>
-      
+      <!--carousel Check-->
+  <div class="slider1">
+  <div class="slide">
+   <div style="width: 250px;">
+          <p class="message">Your browser does not support the border-radius property!</p>
+        <div class="section">
+          <div class="normal-trigger-area">
+            <a href="#" id="circle8" class="ec-circle" style="background: #dda994 url(images/iphone.jpg) no-repeat center center;">
+              <h3>iPhone 5</h3>
+               <p>Loving it is easy<br>Thats why so many people love it</p>
+            </a>
+          </div>
+       </div>
+       </div>
+
+
+
+
+  </div>
+  <div class="slide"> 
+    <div style="width: 250px;">
+          <p class="message">Your browser does not support the border-radius property!</p>
+        <div class="section">
+          <div class="normal-trigger-area">
+            <a href="#" id="circle9" class="ec-circle" style="background: #dda994 url(images/iphone.jpg) no-repeat center center;">
+              <h3>iPhone 5</h3>
+               <p>Loving it is easy<br>Thats why so many people love it</p>
+            </a>
+          </div>
+       </div>
+       </div>
+
+
+
+
+  </div>
+  <div class="slide">
+    <div style="width: 250px;">
+          <p class="message">Your browser does not support the border-radius property!</p>
+        <div class="section">
+          <div class="normal-trigger-area">
+            <a href="#" id="circle10" class="ec-circle" style="background: #dda994 url(images/iphone.jpg) no-repeat center center;">
+              <h3>iPhone 5</h3>
+               <p>Loving it is easy<br>Thats why so many people love it</p>
+            </a>
+          </div>
+       </div>
+       </div>
+
+
+
+  </div>
+  <div class="slide">
+<div style="width: 250px;">
+          <p class="message">Your browser does not support the border-radius property!</p>
+        <div class="section">
+          <div class="normal-trigger-area">
+            <a href="#" id="circle11" class="ec-circle" style="background: #dda994 url(images/iphone.jpg) no-repeat center center;">
+              <h3>iPhone 5</h3>
+               <p>Loving it is easy<br>Thats why so many people love it</p>
+            </a>
+          </div>
+       </div>
+       </div>
+
+
+
+  </div>
+  <div class="slide"><img src="http://placehold.it/350x150&text=FooBar5"></div>
+  <div class="slide"><img src="http://placehold.it/350x150&text=FooBar6"></div>
+  <div class="slide"><img src="http://placehold.it/350x150&text=FooBar7"></div>
+  <div class="slide"><img src="http://placehold.it/350x150&text=FooBar8"></div>
+  <div class="slide"><img src="http://placehold.it/350x150&text=FooBar9"></div>
+  
+</div>
+<script type="text/javascript">
+  $(document).ready(function(){
+  $('.slider1').bxSlider({
+    slideWidth: 950,
+    minSlides: 4,
+    maxSlides: 5,
+    slideMargin: 10
+  });
+});
+
+
+
+
+
+</script>
+
+
+      </script>
+        <script type="text/javascript">
+            $(function() {
+
+        $('#circle8').circlemouse({
+          onMouseEnter  : function( el ) {
+
+            el.addClass('ec-circle-hover');
+
+          },
+          onMouseLeave  : function( el ) {
+
+            el.removeClass('ec-circle-hover');
+
+          },
+          onClick     : function( el ) {
+
+            alert('clicked');
+
+                   }
+                    });
+
+                      });
+        </script>
+
+         </script>
+
+        <script type="text/javascript">
+            $(function() {
+
+        $('#circle9').circlemouse({
+          onMouseEnter  : function( el ) {
+
+            el.addClass('ec-circle-hover');
+
+          },
+          onMouseLeave  : function( el ) {
+
+            el.removeClass('ec-circle-hover');
+
+          },
+          onClick     : function( el ) {
+
+            alert('clicked');
+
+                   }
+                    });
+
+                      });
+        </script>
+
+<script type="text/javascript">
+            $(function() {
+
+        $('#circle10').circlemouse({
+          onMouseEnter  : function( el ) {
+
+            el.addClass('ec-circle-hover');
+
+          },
+          onMouseLeave  : function( el ) {
+
+            el.removeClass('ec-circle-hover');
+
+          },
+          onClick     : function( el ) {
+
+            alert('clicked');
+
+                   }
+                    });
+
+                      });
+        </script>
+        
+        <script type="text/javascript">
+            $(function() {
+
+        $('#circle11').circlemouse({
+          onMouseEnter  : function( el ) {
+
+            el.addClass('ec-circle-hover');
+
+          },
+          onMouseLeave  : function( el ) {
+
+            el.removeClass('ec-circle-hover');
+
+          },
+          onClick     : function( el ) {
+
+            alert('clicked');
+
+                   }
+                    });
+
+                      });
+        </script>
+
       
      
 
